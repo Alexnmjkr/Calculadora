@@ -21,14 +21,15 @@ namespace Calculadora
                 Console.WriteLine("1. Sumar");
                 Console.WriteLine("2. Restar");
                 Console.WriteLine("3. Dividir");
-                Console.WriteLine("4. Salir");
+                Console.WriteLine("4. Multiplicar");
+                Console.WriteLine("5. Salir");
                 Console.WriteLine();
                 Console.Write("Seleccione una opción: ");
 
                 string opcion = Console.ReadLine();
                 Console.Clear();
 
-                if (opcion == "4")
+                if (opcion == "5")
                 {
                     Console.WriteLine("Saliendo de la calculadora :)");
                     break;
@@ -54,6 +55,10 @@ namespace Calculadora
 
                     case "3":
                         operacion = new División(numero1, numero2);
+                        break;
+
+                    case "4":
+                        operacion = new Multiplicacion(numero1, numero2);
                         break;
 
                     default:

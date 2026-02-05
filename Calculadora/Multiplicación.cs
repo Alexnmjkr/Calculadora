@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Calculadora
 {
-    internal class Multiplicación
+    class Multiplicacion : Operacion
     {
+        public Multiplicacion(int n1, int n2) : base(n1, n2)
+        {
+        }
+
+        public override double Calcular()
+        {
+            return numero1 * numero2;
+        }
     }
 }

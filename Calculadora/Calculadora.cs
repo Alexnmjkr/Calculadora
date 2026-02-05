@@ -13,6 +13,11 @@ namespace Calculadora
             int numero1 = 0;
             int numero2 = 0;
 
+            Console.WriteLine("Bienvenido a la calculadora POO ✨");
+            Console.WriteLine("Presiona cualquier tecla para comenzar...");
+            Console.ReadKey();
+            Console.Clear();
+
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;

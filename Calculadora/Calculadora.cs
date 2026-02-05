@@ -15,7 +15,9 @@ namespace Calculadora
 
             while (true)
             {
-                Console.WriteLine("=== Calculadora Sencilla ===");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("=== CALCULADORA ===");
+                Console.ResetColor();
                 Console.WriteLine("1. Sumar");
                 Console.WriteLine("2. Restar");
                 Console.WriteLine("3. Dividir");
@@ -61,7 +63,9 @@ namespace Calculadora
                         continue;
                 }
                         Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Resultado: " + operacion.Calcular());
+                        Console.ResetColor();
                         Console.WriteLine();
                         Console.WriteLine("Presiona cualquier tecla para volver al menú");
                         Console.ReadKey(); 

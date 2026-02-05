@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculador.cs" />
     <Compile Include="Calculadora.cs" />
     <Compile Include="División.cs" />
     <Compile Include="Multiplicación.cs" />
